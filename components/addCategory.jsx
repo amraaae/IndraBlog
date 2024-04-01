@@ -12,14 +12,15 @@ function AddCategories() {
     });
   };
   return (
-    <div className=" flex flex-col gap-[40px]">
-      <input
+    <div className=" flex flex-col gap-[40px] ">
+      <input className="text-[#000] border"
         type="text"
         onChange={(e) => {
           setTitle(e.target.value);
         }}
       />
-      <textarea
+      <textarea 
+      className="text-[#000] border"
         name=""
         id=""
         cols="30"
@@ -29,7 +30,7 @@ function AddCategories() {
         }}
       ></textarea>
       <button className="bg-[#000] text-[#fff] " onClick={HandleClick}>
-        add category
+        ADD
       </button>
     </div>
   );

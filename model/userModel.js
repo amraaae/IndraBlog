@@ -24,7 +24,7 @@ const User = new Schema(
 let UserModel;
 
 if (mongoose.models.user) {
-  UserModel = mongoose.models.User;
+  UserModel = mongoose.models.user;
 } else {
   UserModel = mongoose.model("user", User);
 }

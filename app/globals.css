@@ -2,32 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Light mode styles */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --toggle-bg-color: #f3f4f6;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.dark {
+  /* Dark mode styles */
+  --bg-color: #1f2937;
+  --text-color: #f3f4f6;
+  --toggle-bg-color: #374151;
 }
+
+body.dark {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.dark .dark-toggle {
+  background-color: var(--toggle-bg-color);
+}
+    
