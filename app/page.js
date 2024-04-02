@@ -8,16 +8,16 @@ export default function Home() {
     <main className="flex min-h-screen flex-col w-[80%] m-auto pt-14 ">
       <div className="grid grid-cols-3 grid-rows-6 gap-4">
         <div className="col-span-2 ">
-          <h1 className="text-7xl font-bold italic">" Best of the week "</h1>
+          <h1 className="text-7xl font-bold italic">&quot; Best of the week &quot;</h1>
         </div>
         <div className="row-span-3 col-start-3 rounded-xl bg-slate-500">
-          //Post#2
+          post1
         </div>
         <div className="col-span-2 row-span-5 row-start-2 rounded-xl bg-slate-500">
-          //Post#1
+          post2
         </div>
         <div className="row-span-3 col-start-3 row-start-4 rounded-xl bg-slate-500">
-          //Post#3
+          post3
         </div>
       </div>
       <div className="h-[100vh] p-10">
