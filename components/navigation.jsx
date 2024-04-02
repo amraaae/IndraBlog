@@ -26,7 +26,7 @@ function Nav() {
         </div>
         <div className="flex-1 flex text-center font-extrabold italic">myBLOG.</div>
         <div className=" flex">
-          <ul className="text-black flex gap-5 font-semibold items-center ">
+          <ul className=" flex gap-5 font-semibold items-center ">
             <ThemeToggle />
             <li>
               <Link href="/">Home</Link>
@@ -40,7 +40,7 @@ function Nav() {
                   <button
                     id="dropdownDividerButton"
                     data-dropdown-toggle="dropdownDivider"
-                    className="text-white bg-slate-800 font-medium rounded-lg text-sm px-2 py-2 text-center inline-flex items-center"
+                    className="border border-slate-700 font-bold rounded-lg text-sm px-2 py-2 text-center inline-flex items-center"
                     type="button"
                     onClick={toggleDropdown}
                   >
