@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { signIn, useSession } from "next-auth/react"; // Import useSession
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import GoogleSignInButton from "./authButton";
 
 function Login() {
@@ -34,8 +35,8 @@ function Login() {
 
   return (
     <div className="w-[30%] h-[100vh] py-24 ">
-      <div className="shadow-lg p-6 rounded-lg border">
-        <h1 className="text-xl font-bold my-4 text-center">Login</h1>
+      <div className="shadow-lg p-6 rounded-lg border bg-slate-100">
+        <h1 className="text-xl font-bold my-4 text-center text-black">Login</h1>
         <form onSubmit={handleLogin} className="flex flex-col gap-3">
           {/* Input fields for email and password */}
           <input
@@ -51,7 +52,7 @@ function Login() {
             placeholder="Password"
           />
           {/* Login button */}
-          <button className="bg-green-600 text-white font-bold cursor-pointer px-6 py-2">
+          <button className="bg-slate-800 text-white font-bold cursor-pointer px-6 py-2 hover:bg-slate-500">
             Login
           </button>
 
@@ -71,9 +72,9 @@ function Login() {
           <div class="mt-4 text-sm text-gray-600 text-center">
             <p>
               Don&apos;t have an account?{" "}
-              <a href="/register" class="text-black hover:underline">
-                Sign in
-              </a>
+              <Link className="text-blue-500 hover:underline" href="/register">
+                Register
+              </Link>
             </p>
           </div>
         </form>

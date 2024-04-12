@@ -1,7 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import axios from "axios";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -12,7 +10,7 @@ export default function Home() {
             &quot; Best of the week &quot;
           </h1>
         </div>
-        <div className="row-span-3 col-start-3 rounded-xl bg-slate-500 relative overflow-hidden">
+        <div className="row-span-3 col-start-3 rounded-xl bg-slate-500 relative overflow-hidden shadow-md">
           <img
             src="/postmain.jpg"
             alt=""
@@ -61,103 +59,36 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-[80%] mx-auto py-14 ">
-        <h1 className="text-6xl font-bold italic text-center py-10">
-          Categories
-        </h1>
-        <div className="grid grid-cols-5 grid-rows-5 gap-4 w-[80%] mx-auto">
-          <div className=" w-[160px] h-[80px] flex justify-center items-center transition duration-300 hover:-translate-y-1 hover:scale-110">
-            <img
-              src="/fashin.jpg"
-              alt=""
-              className="w-full h-full object-cover rounded-full"
-            />
-            <img src="or.svg" alt="" className="absolute mx-auto" width={100} />
-          </div>
-          <div className=" w-[160px] h-[80px] flex justify-center items-center transition duration-300 hover:-translate-y-1 hover:scale-110">
-            <img
-              src="/fashin.jpg"
-              alt=""
-              className="w-full h-full object-cover rounded-full"
-            />
-            <img
-              src="arrow.svg"
-              alt=""
-              className="absolute mx-auto"
-              width={60}
-            />
-          </div>
-          <div className=" w-[160px] h-[80px] flex justify-center items-center transition duration-300 hover:-translate-y-1 hover:scale-110">
-            <img
-              src="/fashin.jpg"
-              alt=""
-              className="w-full h-full object-cover rounded-full"
-            />
-            <img
-              src="blueod.svg"
-              alt=""
-              className="absolute mx-auto"
-              width={60}
-            />
-          </div>
-          <div className=" w-[160px] h-[80px] flex justify-center items-center transition duration-300 hover:-translate-y-1 hover:scale-110">
-            <img
-              src="/fashin.jpg"
-              alt=""
-              className="w-full h-full object-cover rounded-full"
-            />
-            <img
-              src="bra.svg"
-              alt=""
-              className="absolute mx-auto"
-              width={100}
-            />
-          </div>
-          <div className=" w-[160px] h-[80px] flex justify-center items-center transition duration-300 hover:-translate-y-1 hover:scale-110">
-            <img
-              src="/fashin.jpg"
-              alt=""
-              className="w-full h-full object-cover rounded-full"
-            />
-            <img
-              src="up.svg"
-              alt=""
-              className="absolute mx-auto mb-4"
-              width={80}
-            />
-          </div>
-        </div>
-      </div>
-
-      
-
       <div className="h-auto mb-24">
         <h1 className="text-5xl font-bold italic py-14 text-center">
           Recent Posts
         </h1>
         <div className="w-[80%] m-auto grid grid-cols-4 grid-rows-5 gap-4">
-          <div className="row-span-3 bg-slate-500">
+          <div className="row-span-3">
             <div>
-              <img src="/fb.svg" alt="" />
+              <img src="/21.jpg" alt="" />
             </div>
             <div className="p-4 ">
               <h1>Title</h1>
               <p>Description</p>
             </div>
           </div>
-          <div className="row-span-2 bg-slate-500">2</div>
-          <div className="row-span-3 bg-slate-500">
+          <div className="row-span-2 bg-slate-500">
             <div>
-              <img src="/fb.svg" alt="" />
+            </div>
+          </div>
+          <div className="row-span-3">
+            <div>
+              <img src="/21.jpg" alt="" />
             </div>
             <div className="p-4 ">
               <h1 className="">Title</h1>
               <p>Description</p>
             </div>
           </div>
-          <div className="row-span-3 col-start-2 row-start-3 bg-slate-500">
+          <div className="row-span-3 col-start-2 row-start-3 ">
             <div>
-              <img src="/fb.svg" alt="" />
+              <img src="/21.jpg" alt="" />
             </div>
             <div className="p-4 ">
               <h1>Title</h1>
@@ -166,9 +97,9 @@ export default function Home() {
           </div>
           <div className="row-span-2 col-start-3 row-start-4 bg-slate-500"></div>
           <div className="row-span-2 col-start-1 row-start-4 bg-slate-500"></div>
-          <div className="row-span-3 col-start-4 row-start-3 bg-slate-500">
+          <div className="row-span-3 col-start-4 row-start-3 ">
             <div>
-              <img src="/fb.svg" alt="" />
+              <img src="/21.jpg" alt="" />
             </div>
             <div className="p-4 ">
               <h1>Title</h1>
@@ -179,29 +110,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-slate-950 w-full h-auto flex justify-center items-center mb-24">
-        <div className="grid grid-cols-4 grid-rows-6 gap-4 w-[80%] mx-auto h-auto py-10">
-          <div className="row-span-2 col-start-4 row-start-1">
-            <img src="/people.jpg" alt="" />
-          </div>
-          <div className="row-span-2 col-start-4 row-start-3">
-            <img src="/people.jpg" alt="" />
-          </div>
-          <div className="row-span-2 col-start-4 row-start-5">
-            <img src="/people.jpg" alt="" />
-          </div>
-          <div className="col-span-3 row-span-4 col-start-1 row-start-2">
-            <img src="/people.jpg" alt="" />
-          </div>
-          <div className="col-span-3 col-start-1 row-start-1">
-            <h1 className="text-7xl font-bold italic text-white">Gallery</h1>
-          </div>
-          <div className="col-span-3 row-start-6">
-            <h1 className="text-7xl font-bold italic text-white">
-              Shot by ShottaFlow.
-            </h1>
-          </div>
-        </div>
+      <div className="bg-slate-950 w-full h-full flex justify-center items-center mb-24">
+        
       </div>
 
       <div className="w-[80%] m-auto grid grid-cols-2 grid-rows-5 gap-4 pb-[10%]">
@@ -229,3 +139,10 @@ export default function Home() {
     </main>
   );
 }
+
+
+// div - onclick={() => setDropdownOpen(people)}
+// const [image, setImage] = useState("")
+// setDropDownOpen(image){ setImage(image) }
+
+// /div src={image}

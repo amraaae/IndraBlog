@@ -18,7 +18,7 @@ function Nav() {
 
   return (
     <>
-      <div className="flex justify-between w-[80%] mx-auto items-center py-5">
+      <div className="hidden sm: md:flex justify-between w-[80%] mx-auto items-center py-5">
         <div className="flex flex-1 gap-2">
           <img src="/fb.svg" width={24} alt="" />
           <img src="/instagram.svg" width={24} alt="" />
@@ -32,7 +32,7 @@ function Nav() {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/posts">Posts</Link>
+              <Link href="/pages/posts">Posts</Link>
             </li>
             {session ? (
               <>
@@ -71,7 +71,13 @@ function Nav() {
                         aria-labelledby="dropdownDividerButton"
                       >
                         <li>
-                          <Link className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white w-full text-left" href="/dashboard">Dashboard</Link>
+                          <Link className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white w-full text-left" href="/pages/profile">Profile</Link>
+                        </li>
+                        <li>
+                          <Link className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white w-full text-left" href="/pages/dashboard">Dashboard</Link>
+                        </li>
+                        <li>
+                          <Link className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white w-full text-left" href="/pages/publish">Publish</Link>
                         </li>
                         <li>
                           <button
@@ -88,7 +94,7 @@ function Nav() {
               </>
             ) : (
               <li >
-                <Link className="text-white bg-slate-800 font-medium rounded-lg text-sm px-2 py-2 text-center inline-flex items-center" href="/login">LOGIN</Link>
+                <Link className="text-white bg-slate-800 font-medium rounded-lg text-sm px-2 py-2 text-center inline-flex items-center" href="/pages/login">LOGIN</Link>
               </li>
             )}
           </ul>
